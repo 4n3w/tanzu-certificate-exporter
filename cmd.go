@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
+	"net/url"
+
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"net/url"
 )
 
 // Global Parameter
@@ -66,7 +67,7 @@ var rootCmd = &cobra.Command{
 
 // Set defaults of values of fields that are missed by the user
 func setDefaultsOrErrorIfMissing() {
-	suffixText := "is a required flag and its missing"
+	suffixText := "is a required flag and it's missing"
 	if cmdOptions.Interval == 0 { // Interval
 		cmdOptions.Interval = defaultInterval
 	}

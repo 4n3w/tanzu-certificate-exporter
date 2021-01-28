@@ -71,11 +71,11 @@ kubectl apply -f tanzu-certificate-exporter.yaml
 
 ## Prometheus Setup
 
-**NOTE:** These step will restart the prometheus agent and might result in a downtime.
+**NOTE:** These steps will restart the prometheus agent and might result in downtime.
 
 ### Option 1: Using [prometheus-boshrelease](https://github.com/bosh-prometheus/prometheus-boshrelease) release
 
-if you are using prometheus which is part of the [prometheus-boshrelease](https://github.com/bosh-prometheus/prometheus-boshrelease) then in order to register the route.
+If you are using prometheus which is part of the [prometheus-boshrelease](https://github.com/bosh-prometheus/prometheus-boshrelease) then in order to register the route:
 
 ```
 # Open the manifests/prometheus.yml file
